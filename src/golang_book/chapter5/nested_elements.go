@@ -47,7 +47,16 @@ func main() {
 		},
 	}
 
-	if el, ok := elements["Li"]; ok {
-		fmt.Println(el["name"], el["state"])
+	var input string
+	for {
+		fmt.Print("Please enter an element:")
+		fmt.Scanf("%s", &input)
+
+		if el, ok := elements[input]; ok {
+			fmt.Println(el["name"], el["state"])
+		} else {
+			fmt.Println("Not Found")
+			break
+		}
 	}
 }

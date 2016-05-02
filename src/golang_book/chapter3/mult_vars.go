@@ -8,5 +8,5 @@ func main() {
 		b = 10
 		c = 15
 	)
-	fmt.Print(a, b, c)
+	fmt.Print(a, b, c, "\n")
 }
